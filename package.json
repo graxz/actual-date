@@ -1,8 +1,8 @@
 {
   "name": "load-balance",
   "version": "1.0.0",
-  "description": "",
-  "author": "",
+  "description": "Um projeto de estudo de Load Balance e rate limit com NestJS",
+  "author": "Isaddora Freitas",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
