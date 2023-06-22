@@ -15,8 +15,16 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return "Hello World!"', () => {
-      expect(appController.getHello()).toBe('Hello World!');
+    it('should return DateResponse', () => {
+      const date = new Date();
+
+      const dateResponse = `${date.getDate()}-${date.getMonth()}-${date.getFullYear()}`;
+      const timeResponse = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+
+      expect(appController.date()).toStrictEqual({
+        date: dateResponse,
+        time: timeResponse,
+      });
     });
   });
 });
