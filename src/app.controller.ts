@@ -5,7 +5,7 @@ import { AppService, DateResponse } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get()
+  @Get('/date')
   date(): DateResponse {
     return this.appService.date();
   }
