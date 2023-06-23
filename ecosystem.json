@@ -3,7 +3,7 @@
     {
       "name": "actual-date",
       "script": "./dist/main.js",
-      "instances": 10,
+      "instances": "max",
       "exec_mode": "cluster",
       "env": {
         "NODE_ENV": "production"

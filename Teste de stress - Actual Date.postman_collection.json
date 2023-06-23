@@ -1,0 +1,28 @@
+{
+	"info": {
+		"_postman_id": "231be2db-a436-4f86-9c89-56e24cba6bb8",
+		"name": "Teste de stress - Actual Date",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "busca a data/hora",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/date",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"date"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

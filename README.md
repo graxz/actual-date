@@ -7,6 +7,32 @@ Antes de implementarmos um *Load Balancer* é necessario ver essa necessidade, i
 
 ![image](https://github.com/graxz/actual-date/assets/60474834/e325438e-a2b7-40e9-bc3e-10d55f129a85)
 
+### Instalação
+
+Primeiro precisamos clonar o projeto:
+
+```bash
+  git clone
+```
+
+Depois precisamos instalar as dependencias:
+
+```bash
+  npm install
+```
+
+Este projeto foi elaborado em cima do *pm2* (Load Balancer) nosso start inicia no maximo de CPUs disponiveis na maquina, caso queira alterar o numero de CPUs basta alterar o arquivo *ecosystem.config.js*. Para iniciar o projeto basta rodar o comando:
+
+```bash
+  npm run start
+```
+
+Para parar o projeto basta rodar o comando:
+
+```bash
+  npm run stop
+```
+
 ### ROTAS
 
 #### Retorna data e hora atual
@@ -38,7 +64,13 @@ Com certeza não é uma resposta rapida porem temos um corte de metade do tempo 
 
 Temos mais uma queda para menos da metade! Com isso entendemos que o load balancer está fazendo seu devido trabalho com excelencia.
 
-*Foi utilizado para o teste de carga a ferramenta postman.*
+*Foi utilizado para o teste de carga a ferramenta postman*
+
+## Como rodar o teste
+
+Primeiro precisamos já ter o Postman instalado em nossa maquina, depois precisamos baixar o arquivo *Teste de stress - Actual Date.postman_collection.json* e importar no postman. Com isso já temos a collection pronta para executar o teste.
+
+![image](https://github.com/graxz/actual-date/assets/60474834/3789888f-1a01-4644-8fa2-fe46dc890cbd)
 
 ## Autores
 
